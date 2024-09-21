@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/auth';
+const API_URL = 'https://dummy-video-list-kt1j.vercel.app/';
 
 export const signup = (email: string, password: string) => {
   return axios.post(`${API_URL}/signup`, { email, password });
