@@ -1,22 +1,32 @@
 {
   "name": "be",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon dist/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
+    "build": "tsc"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^your-express-version",
-    "mongoose": "^your-mongoose-version",
-    "bcrypt": "^your-bcrypt-version",
-    "jsonwebtoken": "^your-jwt-version",
-    "cors": "^your-cors-version"
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.3"
   },
   "devDependencies": {
-    "typescript": "^your-typescript-version",
-    "ts-node": "^your-ts-node-version",
-    "nodemon": "^your-nodemon-version"
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/mongoose": "^5.11.97",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
   }
 }
